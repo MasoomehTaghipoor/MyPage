@@ -12,57 +12,110 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #f4f4f9;
   display: flex;
+  height: 100vh;
+}
+
+/* --------- BARRE LATÉRALE --------- */
+.sidebar {
+  width: 250px;
+  background: #1e3a8a; /* Bleu foncé élégant */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* --------- CONTENU PRINCIPAL --------- */
+.main-content {
+  margin-left: 250px; /* Décalage pour la barre latérale */
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
   padding: 20px;
 }
 
-/* Conteneur principal */
-#committee-membership {
-  background-color: #ffffff;
+.container {
+  background: white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px;
   text-align: left;
-  transition: transform 0.2s ease-in-out;
 }
 
-/* Effet léger au survol */
-#committee-membership:hover {
-  transform: scale(1.02);
-}
-
-/* Titre */
-h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #333;
-  font-weight: 600;
+/* --------- TITRES --------- */
+h1, h2 {
   text-align: center;
+  color: #333;
 }
 
-/* Liste */
-ul {
-  list-style-type: none;
-  padding: 0;
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .main-content {
+    margin-left: 200px;
+  }
+
+  .container {
+    width: 90%;
+  }
 }
 
-ul li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.5;
-  padding: 10px;
-  border-radius: 8px;
-  transition: background 0.3s ease-in-out;
-}
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
 
-/* Effet au survol des éléments */
-ul li:hover {
-  background: rgba(0, 150, 255, 0.1
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
