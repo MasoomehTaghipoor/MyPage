@@ -51,3 +51,6 @@ ul li:last-child {
   margin-bottom: 0;
 }
 
+ul li p {
+  text-align: justify;
+}
