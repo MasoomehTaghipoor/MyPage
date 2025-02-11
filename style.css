@@ -59,7 +59,25 @@ body {
     flex-grow: 1;
 }
 
+/* Titres */
 h1 {
     color: #333;
+    text-align: center;
 }
 
+h2, h3 {
+    color: #555;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
