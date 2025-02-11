@@ -1,4 +1,5 @@
-<section id="enseignement">
+<!DOCTYPE html>
+<html lang="fr">
     <h2>Expériences d'Enseignement</h2>
 
     <div class="teaching-experience">
@@ -42,4 +43,4 @@
             <li><strong>Proposition d’un module sur la compréhension et la quantification du concept de robustesse :</strong> Collaboration avec PEGASE et MoSAR (AàP Agreenium 2018)</li>
         </ul>
     </div>
-</section>
+
