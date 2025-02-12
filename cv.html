@@ -1,73 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Masoomeh Taghipoor</title>
+
+    <!-- Lien vers le CSS -->
     <link rel="stylesheet" href="style.css">
-        <style>
-        body {
-            line-height: 1.6;
+
+    <script>
+        function toggleSubMenu(id) {
+            var subMenu = document.getElementById(id);
+            subMenu.classList.toggle("active");
         }
-    </style>
+    </script>
 </head>
 <body>
+
+    <!-- Menu latéral -->
     <nav class="sidebar">
         <h2>Menu</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cv.html" class="active">CV</a></li>
+            <li><a href="index.html">Accueil</a></li>
+
+            <li>
+                <a href="cv.html" class="active">CV</a>
+                <ul class="submenu">
+                    <li><a href="CV_Masoomeh_Taghipoor.pdf" target="_blank">Télécharger mon CV</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="Teaching.html">Enseignement</a>
+                <ul class="submenu">
+                    <li><a href="Teaching.html">Mes cours</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="Research.html">Recherche</a>
+                <ul class="submenu">
+                    <li><a href="Robustness.html">Robustesse des Modèles</a></li>
+                    <li><a href="PhD_masoomehtaghipoor.pdf" target="_blank">Ma thèse</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
+    <!-- Contenu principal -->
     <div class="main-content">
         <h1>Curriculum Vitae</h1>
         <h2>Masoomeh Taghipoor (PhD)</h2>
-        <p><strong>Deputy Director</strong> - <a href="https://eng-mosar.versailles-saclay.hub.inrae.fr/umr-mosar">MoSAR</a> (Systemic Modelling Applied to Ruminants)<br>
+
+        <p><strong>Deputy Director</strong> - <a href="https://eng-mosar.versailles-saclay.hub.inrae.fr/umr-mosar" target="_blank">MoSAR</a> (Systemic Modelling Applied to Ruminants)<br>
         Paris-Saclay University - INRAE - AgroParisTech</p>
-        
+
         <p>
             📌 <strong>IdHAL:</strong> masoomeh-taghipoor<br>
             📌 <strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5979-1578" target="_blank">0000-0002-5979-1578</a><br>
             📌 <strong>ResearcherId:</strong> <a href="http://www.researcherid.com/rid/I-8097-2013" target="_blank">I-8097-2013</a>
         </p>
 
-        <h3>🎓 Education</h3>
+        <h3>🎓 Éducation</h3>
         <ul>
-            <li>PhD in Applied Mathematics, François Rabelais University, Tours, France (2012)
-            <a href="PhD_masoomehtaghipoor.pdf" target="_blank">Download My PhD dissertion (PDF)</a></li>
-            <li>MSc in Mathematics and Computer Science, Nantes University, France (2008)</li>
-            <li>Bachelor in Mathematics, IUST, Tehran, Iran (2006)</li>
+            <li>PhD en Mathématiques Appliquées, Université François Rabelais, Tours, France (2012)
+            <a href="PhD_masoomehtaghipoor.pdf" target="_blank">Télécharger ma thèse (PDF)</a></li>
+            <li>MSc en Mathématiques et Informatique, Université de Nantes, France (2008)</li>
+            <li>Licence en Mathématiques, IUST, Téhéran, Iran (2006)</li>
         </ul>
 
-        <h3>🔬 Research Experience</h3>
+        <h3>🔬 Expérience en Recherche</h3>
         <ul>
-            <li>Researcher at MoSAR, INRAE, Paris-Saclay (2018-present)</li>
-            <li>Researcher at PEGASE, INRAE, Saint-Gilles (2012-2018)</li>
-            <li>Co-leader of the national PEPR <a href="https://www.pepr-agroeconum.fr/les-projets-finances/agroequipements/projets-cibles/wait4">project WAIT4</a> (2022-2027) </li>
-            <li>Coordinator of the <a href="https://bioepar.angers-nantes.hub.inrae.fr/recherche/animation-de-reseaux/rumba">RUMBA network</a> (2020-2022)</li>
-            <li>Supervision of MSc and PhD projects in data analysis and mathematical modeling</li>
+            <li>Ingénieur de recherche à MoSAR, INRAE, Paris-Saclay (2018-présent)</li>
+            <li>Ingénieur de recherche à PEGASE, INRAE, Saint-Gilles (2012-2018)</li>
+            <li>Co-leader du projet national <a href="https://www.pepr-agroeconum.fr/les-projets-finances/agroequipements/projets-cibles/wait4" target="_blank">WAIT4</a> (2022-2027)</li>
+            <li>Coordinateur du réseau <a href="https://bioepar.angers-nantes.hub.inrae.fr/recherche/animation-de-reseaux/rumba" target="_blank">RUMBA</a> (2020-2022)</li>
+            <li>Encadrement de MSc et PhD en analyse de données et modélisation</li>
         </ul>
 
-        <h3>👩‍🏫 Teaching Experience</h3>
+        <h3>👩‍🏫 Expérience en Enseignement</h3>
         <ul>
-            <li>Lecturer in the international MSc program <a href="https://www.universite-paris-saclay.fr/en/education/master/integrative-biology-and-physiology/m2-predictive-and-integrative-animal-biology#presentation">PRIAM</a>, Paris-Saclay & AgroParisTech (2018-present)</li>
-            <li>Instructor in the doctoral school module <a href="https://adum.fr/script/formations.pl?mod=308429&site=mines">Modeling Cookbook</a> (2021)</li>
-            <li>Organizer and lecturer of the international workshop <a href="Robustness.html">Robustness, from a woolly concept to operational measures</a> (2019)</li>
-            <li>Contrat doctoral (ex.monitorat) de 2009 à 2012. <a href="https://www.universite-paris-saclay.fr/en/education/master/integrative-biology-and-physiology/m2-predictive-and-integrative-animal-biology#presentation">PRIAM</a>, Paris-Saclay & AgroParisTech (2018-present)</li>
-
+            <li>Enseignante dans le MSc international <a href="https://www.universite-paris-saclay.fr/en/education/master/integrative-biology-and-physiology/m2-predictive-and-integrative-animal-biology#presentation" target="_blank">PRIAM</a> (2018-présent)</li>
+            <li>Formatrice au module doctoral <a href="https://adum.fr/script/formations.pl?mod=308429&site=mines" target="_blank">Modeling Cookbook</a> (2021)</li>
+            <li>Organisatrice de l'atelier <a href="Robustness.html">Robustness, from a woolly concept to operational measures</a> (2019)</li>
         </ul>
 
-        <h3>Committee Membership</h3>
-          <ul>
-            <li>Member of the strategic committee of <a href="https://digitbio.hub.inrae.fr/metaprogramme-digit-bio">Digit-Bio</a> program of INRAE, France, since 2020</li>
-            <li>Member of Digital twin reflection group, INRAE, France, since 2023</li>
-            <li>Editorial assistant of <a href="https://animsci.peercommunityin.org/about/about">PCI Animal Sciencek</a> (#OpenScience), 2021-2024</li>
-            <li>Member of scientific committee of INRAE Phase division, 2020-2024</li>
-          </ul>
+        <h3>📢 Comité & Éditions</h3>
+        <ul>
+            <li>Membre du comité stratégique du programme <a href="https://digitbio.hub.inrae.fr/metaprogramme-digit-bio" target="_blank">Digit-Bio</a> (INRAE, depuis 2020)</li>
+            <li>Membre du groupe de réflexion Digital Twin, INRAE (depuis 2023)</li>
+            <li>Assistante éditoriale de <a href="https://animsci.peercommunityin.org/about/about" target="_blank">PCI Animal Science</a> (#OpenScience, 2021-2024)</li>
+            <li>Membre du comité scientifique de la division INRAE Phase (2020-2024)</li>
+        </ul>
 
         <h3>📚 Publications</h3>
-        <p>Find the complete list of my publications on <a href="https://orcid.org/0000-0002-5979-1578" target="_blank">ORCID</a>. Below are four selected publications:</p>
+        <p>Consultez toutes mes publications sur <a href="https://orcid.org/0000-0002-5979-1578" target="_blank">ORCID</a>. Voici quelques articles sélectionnés :</p>
         <ol>
             <li>Taghipoor M. et al. (2023). <em>Quantification of resilience in farm animals</em>. Zenodo.</li>
             <li>Macé T. et al. (2023). <em>PhenoBR, a model to phenotype body condition dynamics in meat sheep</em>. Animal.</li>
@@ -75,10 +102,9 @@
             <li>Taghipoor M. et al. (2020). <em>A novel modeling approach to quantify the response of dairy goats to a high-concentrate diet</em>. Scientific Reports.</li>
         </ol>
 
-        <h3>📄 Download My CV</h3>
-        <p>
-            🔗 <a href="CV_Masoomeh_Taghipoor.pdf" target="_blank">Click here to download my CV (PDF)</a>
-        </p>
+        <h3>📄 Télécharger Mon CV</h3>
+        <p>🔗 <a href="CV_Masoomeh_Taghipoor.pdf" target="_blank">Cliquez ici pour télécharger mon CV (PDF)</a></p>
     </div>
+
 </body>
 </html>
