@@ -70,7 +70,7 @@ p {
     text-align: justify;  /* Justifie le texte pour former un rectangle */
     max-width: 700px;     /* Fixe une largeur idéale pour un paragraphe */
     margin: 0 auto;       /* Centre le paragraphe */
-    line-height: 1.6;     /* Améliore l'espacement entre les lignes */
+    line-height: 2;     /* Améliore l'espacement entre les lignes */
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
     background-color: #f9f9f9; /* Fond léger pour faire ressortir le texte */
