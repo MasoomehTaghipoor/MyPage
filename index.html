@@ -4,34 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masoomeh Taghipoor - Research Engineer</title>
-    
+
     <!-- Balises Meta pour SEO -->
     <meta name="description" content="Masoomeh Taghipoor, Research Engineer, Deputy Head of MOSAR Team at INRAE. Expertise in mathematical modeling and precision livestock farming.">
     <meta name="keywords" content="Masoomeh Taghipoor, Research, Mathematical Modeling, Precision Livestock Farming, AI, Animal Welfare">
     <meta name="author" content="Masoomeh Taghipoor">
 
-    <!-- Lien vers la feuille de style -->
+    <!-- Lien vers le CSS -->
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        body {
-            line-height: 1.6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+
+    <script>
+        function toggleSubMenu(id) {
+            var subMenu = document.getElementById(id);
+            subMenu.classList.toggle("active");
         }
-        .sidebar {
-            width: 200px;
-            position: fixed;
-            height: 100%;
-            background: #f4f4f4;
-            padding: 15px;
-        }
-        .main-content {
-            margin-left: 220px;
-            padding: 20px;
-        }
-    </style>
+    </script>
 </head>
 <body>
 
@@ -40,8 +27,28 @@
         <h2>Menu</h2>
         <ul>
             <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="Teaching.html">Teaching</a></li>
+            
+            <li>
+                <a href="cv.html">CV</a>
+                <ul class="submenu">
+                    <li><a href="CV_Masoomeh_Taghipoor.pdf" target="_blank">Télécharger mon CV</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="Teaching.html">Enseignement</a>
+                <ul class="submenu">
+                    <li><a href="Teaching.html">Mes cours</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="Research.html">Recherche</a>
+                <ul class="submenu">
+                    <li><a href="Robustness.html">Robustesse des Modèles</a></li>
+                    <li><a href="PhD_masoomehtaghipoor.pdf" target="_blank">Ma thèse</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
