@@ -2,11 +2,11 @@ import React from 'react';
 
 const Teaching = () => {
   return (
-    <div className="min-h-screen bg-sky-100 p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="min-h-screen bg-sky-100 p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
       {/* Enseignements niveau Master et ingénieur */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg">
-        <h2 className="text-xl font-bold mb-4">Enseignements niveau Master et ingénieur</h2>
-        <ul className="space-y-6">
+      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+        <h2 className="text-xl font-bold text-gray-700 mb-4">Enseignements niveau Master et ingénieur</h2>
+        <ul className="space-y-4 text-gray-600">
           <li>
             <strong>Intitulé :</strong> Influence of environmental challenges on animal performance by developing a generic model (cours+TP) <br />
             <strong>Niveau :</strong> Master 2 PRIAM de l’université Paris-Saclay <br />
@@ -14,26 +14,26 @@ const Teaching = () => {
           </li>
           <li>
             <strong>Intitulé :</strong> Post treatment of PLF data or how to get the most out of data (cours+TP) <br />
-            <strong>Niveau :</strong> 3eme année EDEN ingénieur d’AgroParisTech <br />
+            <strong>Niveau :</strong> 3ème année EDEN ingénieur d’AgroParisTech <br />
             <strong>Nombre d’heures :</strong> 10h/an
           </li>
           <li>
             <strong>Intitulé :</strong> Proposition de cas concret de modélisation <br />
-            <strong>Niveau :</strong> 2eme année ingénieur d’AgroParisTech <br />
+            <strong>Niveau :</strong> 2ème année ingénieur d’AgroParisTech <br />
             <strong>Nombre d’heures :</strong> 10h/an
           </li>
         </ul>
       </div>
 
       {/* Workshop international */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg">
-        <h2 className="text-xl font-bold mb-4">Workshop international</h2>
-        <ul className="space-y-6">
+      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+        <h2 className="text-xl font-bold text-gray-700 mb-4">Workshop international</h2>
+        <ul className="space-y-4 text-gray-600">
           <li>
             <strong>Intitulé :</strong> Modelling cookbook (2021) <br />
             <strong>Niveau intervention :</strong> comité d’organisation <br />
             <strong>Nombre d’heures :</strong> 3 jours <br />
-            <strong>Financement :</strong> Ecole doctorale ABIES
+            <strong>Financement :</strong> École doctorale ABIES
           </li>
           <li>
             <strong>Intitulé :</strong> Robustness, from a wooly concept to operational measures (2019) <br />
@@ -45,18 +45,18 @@ const Teaching = () => {
       </div>
 
       {/* Encadrement */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg">
-        <h2 className="text-xl font-bold mb-4">Encadrement</h2>
-        <ul className="space-y-6">
+      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
+        <h2 className="text-xl font-bold text-gray-700 mb-4">Encadrement</h2>
+        <ul className="space-y-4 text-gray-600">
           <li>
             <strong>Stages de master 2 :</strong> (2013, 2014) <br />
             <strong>Sujet :</strong> analyse de sensibilité et identification de paramètres du modèle <br />
-            <strong>Etudiants :</strong> Marie Cazenave, Adrien Delpierre
+            <strong>Étudiants :</strong> Marie Cazenave, Adrien Delpierre
           </li>
           <li>
             <strong>Projets de thèse :</strong> (2017-2020, co-encadrement ou collaboration) <br />
             <strong>Sujet :</strong> détection et quantification des réponses adaptatives des porcs en croissance et brebis à viande <br />
-            <strong>Etudiants :</strong> Hieu Nguyen BA et Tiphaine Macé <br />
+            <strong>Étudiants :</strong> Hieu Nguyen BA et Tiphaine Macé <br />
             <strong>Co-encadrement :</strong> J. van Milgen, D. Hazard et E. Gonzalez Garcia
           </li>
         </ul>
@@ -79,7 +79,8 @@ const Sidebar = () => (
 const TeachingPage = () => (
   <div className="flex">
     <Sidebar />
-    <div className="ml-48 w-full">
+    <div className="ml-48 w-full p-6">
+      <h1 className="text-2xl font-bold text-gray-800 mb-6">Enseignement</h1>
       <Teaching />
     </div>
   </div>
