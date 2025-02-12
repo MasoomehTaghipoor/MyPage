@@ -70,7 +70,7 @@ p {
     text-align: left;
     max-width: 800px;  /* Limite la largeur pour une meilleure lisibilité */
     margin: 0 auto;   /* Centre le paragraphe dans la section */
-    line-height: 1.6; /* Améliore l'espacement entre les lignes */
+    line-height: 1.8; /* Améliore l'espacement entre les lignes */
     padding: 10px;
 }
 
