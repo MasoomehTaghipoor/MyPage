@@ -1,178 +1,62 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseignement - Masoomeh Taghipoor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-const Teaching = () => {
-  return (
-    <div className="min-h-screen bg-sky-100 p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-      {/* Enseignements niveau Master et ingénieur */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Enseignements niveau Master et ingénieur</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Intitulé :</strong> Influence of environmental challenges on animal performance by developing a generic model (cours+TP) <br />
-            <strong>Niveau :</strong> Master 2 PRIAM de l’université Paris-Saclay <br />
-            <strong>Nombre d’heures :</strong> 7h/animport React from 'react';
-
-const Teaching = () => {
-  return (
-    <div className="min-h-screen bg-sky-100 p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-      {/* Enseignements niveau Master et ingénieur */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Enseignements niveau Master et ingénieur</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Intitulé :</strong> Influence of environmental challenges on animal performance by developing a generic model (cours+TP) <br />
-            <strong>Niveau :</strong> Master 2 PRIAM de l’université Paris-Saclay <br />
-            <strong>Nombre d’heures :</strong> 7h/an
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Post treatment of PLF data or how to get the most out of data (cours+TP) <br />
-            <strong>Niveau :</strong> 3ème année EDEN ingénieur d’AgroParisTech <br />
-            <strong>Nombre d’heures :</strong> 10h/an
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Proposition de cas concret de modélisation <br />
-            <strong>Niveau :</strong> 2ème année ingénieur d’AgroParisTech <br />
-            <strong>Nombre d’heures :</strong> 10h/an
-          </li>
+    <!-- Menu latéral -->
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="research.html">Recherche & Encadrement</a></li>
+            <li><a href="teaching.html" class="active">Enseignement</a></li>
         </ul>
-      </div>
+    </nav>
 
-      {/* Workshop international */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Workshop international</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Intitulé :</strong> Modelling cookbook (2021) <br />
-            <strong>Niveau intervention :</strong> comité d’organisation <br />
-            <strong>Nombre d’heures :</strong> 3 jours <br />
-            <strong>Financement :</strong> École doctorale ABIES
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Robustness, from a wooly concept to operational measures (2019) <br />
-            <strong>Niveau intervention :</strong> responsable <br />
-            <strong>Nombre d’heures :</strong> 30 heures (5 jours) <br />
-            <strong>Financement :</strong> Agreenium
-          </li>
-        </ul>
-      </div>
+    <!-- Contenu principal divisé en 4 sections -->
+    <div class="main-content grid-container">
+        
+        <div class="teaching-box">
+            <h2>Enseignements niveau Master et ingénieur</h2>
+            <ul>
+                <li><strong>Intitulé :</strong> Influence of environmental challenges on animal performance</li>
+                <li><strong>Niveau :</strong> Master 2 PRIAM</li>
+                <li><strong>Nombre d’heures :</strong> 7h/an</li>
+            </ul>
+        </div>
 
-      {/* Encadrement */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Encadrement</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Stages de master 2 :</strong> (2013, 2014) <br />
-            <strong>Sujet :</strong> analyse de sensibilité et identification de paramètres du modèle <br />
-            <strong>Étudiants :</strong> Marie Cazenave, Adrien Delpierre
-          </li>
-          <li>
-            <strong>Projets de thèse :</strong> (2017-2020, co-encadrement ou collaboration) <br />
-            <strong>Sujet :</strong> détection et quantification des réponses adaptatives des porcs en croissance et brebis à viande <br />
-            <strong>Étudiants :</strong> Hieu Nguyen BA et Tiphaine Macé <br />
-            <strong>Co-encadrement :</strong> J. van Milgen, D. Hazard et E. Gonzalez Garcia
-          </li>
-        </ul>
-      </div>
+        <div class="teaching-box">
+            <h2>Workshop international</h2>
+            <ul>
+                <li><strong>Intitulé :</strong> Modelling cookbook (2021)</li>
+                <li><strong>Durée :</strong> 3 jours</li>
+                <li><strong>Financement :</strong> Ecole doctorale ABIES</li>
+            </ul>
+        </div>
+
+        <div class="teaching-box">
+            <h2>Encadrement</h2>
+            <ul>
+                <li><strong>Stages de Master 2 :</strong> 2013, 2014</li>
+                <li><strong>Etudiants :</strong> Marie Cazenave, Adrien Delpierre</li>
+            </ul>
+        </div>
+
+        <div class="teaching-box">
+            <h2>Projets de thèse</h2>
+            <ul>
+                <li><strong>Co-encadrement :</strong> Hieu Nguyen BA, Tiphaine Macé</li>
+                <li><strong>Durée :</strong> 2017-2020</li>
+            </ul>
+        </div>
+
     </div>
-  );
-};
 
-const Sidebar = () => (
-  <nav className="fixed left-0 top-0 h-full w-48 bg-white shadow-lg p-4">
-    <ul className="space-y-4">
-      <li><a href="/" className="text-gray-700 hover:text-blue-600">Home</a></li>
-      <li><a href="/cv" className="text-gray-700 hover:text-blue-600">CV</a></li>
-      <li><a href="/research" className="text-gray-700 hover:text-blue-600">Recherche & Encadrement</a></li>
-      <li><a href="/teaching" className="text-gray-700 hover:text-blue-600">Teaching</a></li>
-    </ul>
-  </nav>
-);
-
-const TeachingPage = () => (
-  <div className="flex">
-    <Sidebar />
-    <div className="ml-48 w-full p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Enseignement</h1>
-      <Teaching />
-    </div>
-  </div>
-);
-
-export default TeachingPage;
-
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Post treatment of PLF data or how to get the most out of data (cours+TP) <br />
-            <strong>Niveau :</strong> 3ème année EDEN ingénieur d’AgroParisTech <br />
-            <strong>Nombre d’heures :</strong> 10h/an
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Proposition de cas concret de modélisation <br />
-            <strong>Niveau :</strong> 2ème année ingénieur d’AgroParisTech <br />
-            <strong>Nombre d’heures :</strong> 10h/an
-          </li>
-        </ul>
-      </div>
-
-      {/* Workshop international */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Workshop international</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Intitulé :</strong> Modelling cookbook (2021) <br />
-            <strong>Niveau intervention :</strong> comité d’organisation <br />
-            <strong>Nombre d’heures :</strong> 3 jours <br />
-            <strong>Financement :</strong> École doctorale ABIES
-          </li>
-          <li>
-            <strong>Intitulé :</strong> Robustness, from a wooly concept to operational measures (2019) <br />
-            <strong>Niveau intervention :</strong> responsable <br />
-            <strong>Nombre d’heures :</strong> 30 heures (5 jours) <br />
-            <strong>Financement :</strong> Agreenium
-          </li>
-        </ul>
-      </div>
-
-      {/* Encadrement */}
-      <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col justify-between">
-        <h2 className="text-xl font-bold text-gray-700 mb-4">Encadrement</h2>
-        <ul className="space-y-4 text-gray-600">
-          <li>
-            <strong>Stages de master 2 :</strong> (2013, 2014) <br />
-            <strong>Sujet :</strong> analyse de sensibilité et identification de paramètres du modèle <br />
-            <strong>Étudiants :</strong> Marie Cazenave, Adrien Delpierre
-          </li>
-          <li>
-            <strong>Projets de thèse :</strong> (2017-2020, co-encadrement ou collaboration) <br />
-            <strong>Sujet :</strong> détection et quantification des réponses adaptatives des porcs en croissance et brebis à viande <br />
-            <strong>Étudiants :</strong> Hieu Nguyen BA et Tiphaine Macé <br />
-            <strong>Co-encadrement :</strong> J. van Milgen, D. Hazard et E. Gonzalez Garcia
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const Sidebar = () => (
-  <nav className="fixed left-0 top-0 h-full w-48 bg-white shadow-lg p-4">
-    <ul className="space-y-4">
-      <li><a href="/" className="text-gray-700 hover:text-blue-600">Home</a></li>
-      <li><a href="/cv" className="text-gray-700 hover:text-blue-600">CV</a></li>
-      <li><a href="/research" className="text-gray-700 hover:text-blue-600">Recherche & Encadrement</a></li>
-      <li><a href="/teaching" className="text-gray-700 hover:text-blue-600">Teaching</a></li>
-    </ul>
-  </nav>
-);
-
-const TeachingPage = () => (
-  <div className="flex">
-    <Sidebar />
-    <div className="ml-48 w-full p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Enseignement</h1>
-      <Teaching />
-    </div>
-  </div>
-);
-
-export default TeachingPage;
+</body>
+</html>
