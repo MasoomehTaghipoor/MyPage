@@ -65,4 +65,24 @@ const Teaching = () => {
   );
 };
 
-export default Teaching;
+const Sidebar = () => (
+  <nav className="fixed left-0 top-0 h-full w-48 bg-white shadow-lg p-4">
+    <ul className="space-y-4">
+      <li><a href="/" className="text-gray-700 hover:text-blue-600">Home</a></li>
+      <li><a href="/cv" className="text-gray-700 hover:text-blue-600">CV</a></li>
+      <li><a href="/research" className="text-gray-700 hover:text-blue-600">Recherche & Encadrement</a></li>
+      <li><a href="/teaching" className="text-gray-700 hover:text-blue-600">Teaching</a></li>
+    </ul>
+  </nav>
+);
+
+const TeachingPage = () => (
+  <div className="flex">
+    <Sidebar />
+    <div className="ml-48 w-full">
+      <Teaching />
+    </div>
+  </div>
+);
+
+export default TeachingPage;
