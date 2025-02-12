@@ -79,7 +79,7 @@ p {
 }
 .profile-photo {
     display: block;
-    max-width: 100px;  /* Taille maximale de l'image */
+    max-width: 200px;  /* Taille maximale de l'image */
     height: auto;     /* Garde les proportions de l'image */
     border-radius: 50%;  /* Forme arrondie pour un style moderne */
     margin: 20px auto;   /* Centre l'image */
