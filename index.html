@@ -1,41 +1,63 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Masoomeh Taghipoor</title>
+    <title>Masoomeh Taghipoor - Research Engineer</title>
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Lien vers AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-
-    <!-- Menu latéral -->
-    <nav class="sidebar">
-        <h2>Menu</h2>
+    <!-- Navigation -->
+    <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="research.html">Research & Supervision</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#research">Research & Supervision</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Contenu principal -->
-    <div class="main-content">
-        <h1>Bienvenue sur mon site web !</h1>
-        <p>Je suis Masoomeh Taghipoor, chercheuse en ingénierie mathématique appliquée à l'élevage de précision.</p>
-        <p>Mon travail se concentre sur le développement de modèles mathématiques pour comprendre les réponses des animaux aux défis environnementaux et améliorer leur bien-être et leur performance.</p>
-        
-        <h2>À propos de moi</h2>
-        <p>Je suis actuellement directrice adjointe de l'équipe MOSAR à INRAE/AgroParisTech/Paris-Saclay. Depuis 2022, je co-dirige le projet national WAIT4, utilisant l'IA pour caractériser les interactions sociales des animaux afin de mieux comprendre leurs émotions.</p>
-        <p>Je suis également active dans l'encadrement de projets de Master et de doctorat, et j'enseigne des cours en modélisation mathématique appliquée à l'élevage.</p>
-        
-        <h2>Actualités</h2>
-        <ul>
-            <li>🎤 Invité comme conférencière dans un workshop sur l'élevage de précision.</li>
-            <li>📚 Publication récente sur les modèles hybrides en sciences animales.</li>
-            <li>🚀 Développement en cours du pipeline <strong>Act4behav</strong> pour l'analyse des données d'accéléromètres en élevage.</li>
-        </ul>
-    </div>
-    
+    <!-- Section Accueil -->
+    <section id="home" class="section home">
+        <h1 data-aos="fade-up">Masoomeh Taghipoor</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Research Engineer in Precision Livestock Farming</p>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="section">
+        <h2 data-aos="fade-right">Curriculum Vitae</h2>
+        <p data-aos="fade-right" data-aos-delay="200">Summary of my background and professional experiences...</p>
+    </section>
+
+    <!-- Section Research & Supervision -->
+    <section id="research" class="section">
+        <h2 data-aos="fade-left">Research & Supervision</h2>
+        <p data-aos="fade-left" data-aos-delay="200">Projects, publications, and thesis supervision...</p>
+    </section>
+
+    <!-- Section Teaching -->
+    <section id="teaching" class="section">
+        <h2 data-aos="fade-right">Teaching</h2>
+        <p data-aos="fade-right" data-aos-delay="200">Courses and workshops...</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <h2 data-aos="fade-up">Contact</h2>
+        <p data-aos="fade-up" data-aos-delay="200">LinkedIn | ResearchGate | Email</p>
+    </section>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation
+            once: true // L'animation se joue une seule fois
+        });
+    </script>
 </body>
 </html>
