@@ -76,4 +76,12 @@ p {
     background-color: #f9f9f9; /* Fond léger pour faire ressortir le texte */
     border-radius: 8px;   /* Coins légèrement arrondis */
 }
+.profile-photo {
+    display: block;
+    max-width: 200px;  /* Taille maximale de l'image */
+    height: auto;     /* Garde les proportions de l'image */
+    border-radius: 50%;  /* Forme arrondie pour un style moderne */
+    margin: 20px auto;   /* Centre l'image */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Ajoute une ombre douce */
+}
 
