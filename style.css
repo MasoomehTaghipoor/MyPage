@@ -74,7 +74,7 @@ p {
     margin-bottom: 20px; 
     padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
-    background-color: #f9f9f9; /* Fond léger pour faire ressortir le texte */
+    /*background-color: #f9f9f9; /* Fond léger pour faire ressortir le texte */
     border-radius: 8px;   /* Coins légèrement arrondis */
 }
 .profile-photo {
